@@ -1,0 +1,28 @@
+/*
+Colors used:
+Primary Color (purple): rgba(82,55,93,1);
+Secondary Color (white): rgba(255,255,255,1);
+Neutral Color (gray) : rgba(235,234,235,1);
+Text Color (black) : rgba(0,0,0,1);
+*/
+img {
+  width: 100%;
+}
+a{
+  color: rgba(0,0,0,1);
+  text-decoration: none; /* no underlining*/
+}
+
+a visited { /* visited link */
+  color:rgba(235,234,235,1);
+}
+
+a: hover,
+a:focus {
+  color:rgba(0,0,0,1);
+  text-decoration: underline; /*Underlining when hovering over a link */
+}
+
+a active { /* selected link */
+  color: rgba(82,55,93,1);
+}
