@@ -10,10 +10,10 @@ img {
 }
 a {
   color: rgba(0,0,0,1);
-  text-decoration: underline; /*underlining*/
+  text-decoration: bold; /*no underlining*/
 }
 
-a visited { /* visited link */
+a: visited { /* visited link */
   color:rgba(235,234,235,1);
   text-decoration: underline;
 }
@@ -24,7 +24,7 @@ a:focus {
   text-decoration: bold; /*bold when hovering over a link */
 }
 
-a active { /* selected link */
+a: active { /* selected link */
   color: rgba(235,234,235,1);
 }
 
@@ -94,7 +94,7 @@ display:inline-block;
 background-color: rgba(82,55,93,1);
 color: rgba(255,255,255,1);
 font-weight: 400;
-padding: 10px;
+padding: 16px;
 border-radius: 3px;
 border-bottom: 2px solid rgba(235,234,235,1);
 transition:0.2s opacity;
