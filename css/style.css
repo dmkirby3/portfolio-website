@@ -8,9 +8,12 @@ Text Color (black) : rgba(0,0,0,1);
 img {
   width: 100%;
 }
+
+/* links */
+
 a {
   color: rgba(0,0,0,1);
-  text-decoration: bold; /*no underlining*/
+  text-decoration: underline; /*underlining*/
 }
 
 a: visited { /* visited link */
@@ -28,6 +31,9 @@ a: active { /* selected link */
   color: rgba(235,234,235,1);
 }
 
+
+/* body */
+
 body {font-family: 'Poppins',sans-serif;}
 
 body {
@@ -38,6 +44,8 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #000000;
 }
+
+/* typography */
 
 h1, h2, h3, h4 {
   line-height: 1.4;
@@ -66,28 +74,34 @@ p {
 font-weight: 200
 }
 
+/* id selectors for index*/
+#hero
+#work
+#footer
+
+/* id selectors for about */
+#about-head
+#about-story
+#about-skills
+#about-tools
+
+/* id selectors for presence direction */
+#pres-intro
+#pres-process
+#pres-conclusion
+
+/* id selectors for linkedin */
+#linked-intro
+#linked-process
+#linked-conclusion
+
+/* id selectors for becoming counseling */
+#bcmg-intro
+#bcmg-process
+#bcmg-conclusion
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* buttons */
 
 .button {
 display:inline-block;
@@ -96,19 +110,27 @@ color: rgba(255,255,255,1);
 font-weight: 400;
 padding: 16px;
 border-radius: 3px;
-border-bottom: 2px solid rgba(235,234,235,1);
+border-bottom: 2px solid  rgba(0,0,0,1);
 transition:0.2s opacity;
 }
 
 
 .button: hover {
-  opacity:0.8;
+opacity:0.9;
   text-decoration: none;
 }
 
 .button:active {
   color: rgba(235,234,235,1);
 }
+
+
+
+
+
+
+
+
 
 .button.contact {
    background-color: transparent;
