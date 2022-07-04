@@ -8,21 +8,99 @@ Text Color (black) : rgba(0,0,0,1);
 img {
   width: 100%;
 }
-a{
+a {
   color: rgba(0,0,0,1);
-  text-decoration: none; /* no underlining*/
+  text-decoration: underline; /*underlining*/
 }
 
 a visited { /* visited link */
   color:rgba(235,234,235,1);
+  text-decoration: underline;
 }
 
 a: hover,
 a:focus {
-  color:rgba(0,0,0,1);
-  text-decoration: underline; /*Underlining when hovering over a link */
+  color:rgba(235,234,235,1);
+  text-decoration: bold; /*bold when hovering over a link */
 }
 
 a active { /* selected link */
-  color: rgba(82,55,93,1);
+  color: rgba(235,234,235,1);
+}
+
+body {font-family: 'Poppins',sans-serif;}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.25em;
+font-weight: 200
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button {
+display:inline-block;
+background-color: rgba(82,55,93,1);
+color: rgba(255,255,255,1);
+font-weight: 400;
+padding: 10px;
+border-radius: 3px;
+border-bottom: 2px solid rgba(235,234,235,1);
+transition:0.2s opacity;
+}
+
+.button: hover {
+  opacity:0.8;
+  text-decoration: none;
 }
