@@ -10,6 +10,12 @@ Text Color (black) : rgba(0,0,0,1);
   box-sizing: border-box;
 }
 
+/* layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
 .logo{
   max-width: 300px;
   max-height: 300px;
@@ -33,6 +39,12 @@ header {
   padding: 10px;
   margin:10px;
 
+}
+
+.row {
+  margin: 25px 0;
+  border-bottom: 1px solid rgba(0,0,0,1);
+  padding-bottom: 25px;
 }
 
 /* typography */
@@ -160,10 +172,3 @@ color:rgba(255,255,255,1);
 #bcmg-intro
 #bcmg-process
 #bcmg-conclusion
-
-
-/* layout styling */
-
-.container {
-  padding: 0 15px;
-}
