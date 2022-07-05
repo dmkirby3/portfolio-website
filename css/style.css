@@ -108,6 +108,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
+  text-align: center;
 }
 
 h2 {
@@ -204,10 +205,6 @@ color:rgba(255,255,255,1);
 
 /* id selectors for index*/
 
-#hero h1{
-  text-align: center;
-
-}
 
 #hero {
 background-color: rgba(82,55,93,1);
@@ -222,25 +219,52 @@ width: 100%;
   border-bottom: 1px solid rgba(0,0,0,1);
 }
 
-#footer
+#footer {
+  text-align: center;
+}
 
 /* id selectors for about */
 #about-head
-#about-story
-#about-skills
+
+#about-story h2 {
+  text-align: center;
+}
+
+#about-skills h2 {
+  text-align: center;
+}
+
 #about-tools
 
 /* id selectors for presence direction */
-#pres-intro
-#pres-process
-#pres-conclusion
+#pres-intro {
+  text-align: center;
+}
+
+#pres-process h2 {
+  text-align: center;
+}
+
+#pres-conclusion h2 {
+  text-align: center;
+}
 
 /* id selectors for linkedin */
 #linked-intro
-#linked-process
-#linked-conclusion
+#linked-process h2 {
+  text-align: center;
+}
+
+#linked-conclusion h2 {
+  text-align: center;
+}
 
 /* id selectors for becoming counseling */
 #bcmg-intro
-#bcmg-process
-#bcmg-conclusion
+#bcmg-process h2 {
+  text-align: center;
+}
+
+#bcmg-conclusion h2 {
+  text-align: center;
+}
