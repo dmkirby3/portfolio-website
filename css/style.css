@@ -27,7 +27,7 @@ body {
 }
 
 main {
-  padding-top: 325px;
+  padding-top: -360px;
 }
 
 /* typography */
@@ -146,7 +146,7 @@ header {
 }
 
   header .logo {
-  max-width: 150px;
+  max-width: 50px;
 }
 
 /* navigation menu styling */
@@ -188,11 +188,14 @@ nav>ul>li>a:active {
 #hero {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(235, 234, 235, 1);
-  display: inline-block;
   padding: 20px 0;
+  display:inline-block;
   width: 100%;
 }
 
+#hero span {
+  display: block;
+}
 
 /* layout styling */
 .container {
@@ -201,6 +204,13 @@ nav>ul>li>a:active {
 
 .row {
   margin: 25px 0;
+
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #work .row {
@@ -208,6 +218,12 @@ nav>ul>li>a:active {
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
+#work .row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+}
 #footer {
   text-align: center;
 }
@@ -258,6 +274,11 @@ nav>ul>li>a:active {
   text-align: center;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -272,6 +293,11 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 4px;
   }
+  .col-md-6 {
+  width: 50%;
+}
+
+
 }
 
 /* ==============================
