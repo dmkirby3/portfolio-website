@@ -9,16 +9,7 @@ Text Color (black) : rgba(0,0,0,1);
   box-sizing: border-box;
 }
 
-/* layout styling */
-.container {
-  padding: 0 15px;
-}
-
-.logo {
-  max-width: 150px;
-}
-
-/* page sections */
+/*   body sections */
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -37,54 +28,6 @@ body {
 
 main {
   padding-top: 325px;
-}
-
-header {
-  background-color: rgba(82, 55, 93, 1);
-  color: rgba(255, 255, 255, 1);
-  text-align: center;
-  display: inline-block;
-  width: 100%;
-  box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  position: fixed;
-  width: 100%;
-}
-
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a {
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 1);
-}
-
-nav>ul>li>a:visited {
-  color: rgba(255, 255, 255, 1);
-}
-
-nav>ul>li>a:hover {
-  color: #AA8BA1;
-}
-
-nav>ul>li>a:active {
-  color: #AA8BA1;
-}
-
-.row {
-  margin: 25px 0;
 }
 
 /* typography */
@@ -118,6 +61,7 @@ p {
   font-weight: 200
 }
 
+/* images */
 img {
   width: 100%;
 }
@@ -187,13 +131,76 @@ a:active {
   color: rgba(0, 0, 0, 1);
 }
 
-/* id selectors for index*/
+/* header styling */
+
+
+header {
+  background-color: rgba(82, 55, 93, 1);
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+
+  header .logo {
+  max-width: 150px;
+}
+
+/* navigation menu styling */
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+nav>ul>li>a:visited {
+  color: rgba(255, 255, 255, 1);
+}
+
+nav>ul>li>a:hover {
+  color: #AA8BA1;
+}
+
+nav>ul>li>a:active {
+  color: #AA8BA1;
+}
+
+
 #hero {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(235, 234, 235, 1);
   display: inline-block;
   padding: 20px 0;
   width: 100%;
+}
+
+
+/* layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
 }
 
 #work .row {
@@ -206,6 +213,7 @@ a:active {
 }
 
 /* id selectors for about */
+
 #about-head #about-story h2 {
   text-align: center;
 }
@@ -217,6 +225,7 @@ a:active {
 #about-tools
 
 /* id selectors for presence direction */
+
 #pres-intro {
   text-align: center;
 }
@@ -230,6 +239,7 @@ a:active {
 }
 
 /* id selectors for linkedin */
+
 #linked-intro #linked-process h2 {
   text-align: center;
 }
@@ -239,6 +249,7 @@ a:active {
 }
 
 /* id selectors for becoming counseling */
+
 #bcmg-intro #bcmg-process h2 {
   text-align: center;
 }
@@ -246,3 +257,29 @@ a:active {
 #bcmg-conclusion h2 {
   text-align: center;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
