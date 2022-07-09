@@ -97,16 +97,18 @@ a:active {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
+text-decoration: none;
   padding: 16px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 1);
-  transition: 0.2s opacity;
-  text-decoration: none;
+transition: 0.2s opacity;
 }
 
 .button:hover {
   background-color: #AA8BA1;
   color: rgba(82, 55, 93, 1);
+  font-weight: 700;
+  opacity: 0.8;
   text-decoration: none;
 }
 
@@ -116,9 +118,9 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: rgba(0, 0, 0, 1);
+  color: rgba(255,255,255,1);
   text-transform: uppercase;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid rgba(255,255,255,1);
 }
 
 .button.contact:hover {
@@ -145,9 +147,10 @@ header {
   width: 100%;
 }
 
-  header .logo {
-  max-width: 50px;
+  header img {
+  max-width: 250px;
 }
+
 
 /* navigation menu styling */
 
@@ -188,8 +191,9 @@ nav>ul>li>a:active {
 #hero {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(235, 234, 235, 1);
-  padding: 20px 0;
+  padding: 20px 15px;
   display:inline-block;
+  text-align: center;
   width: 100%;
 }
 
@@ -197,6 +201,18 @@ nav>ul>li>a:active {
   display: block;
 }
 
+#contact {
+  text-align: center;
+  background-color: rgba(82, 55, 93, 1);
+  color: rgba(235, 234, 235, 1);
+}
+#contact .container {
+  padding: 10px 10px;
+}
+
+.socials {
+  padding: 10px 0 10px 0;
+}
 /* layout styling */
 .container {
   padding: 0 15px;
@@ -207,35 +223,78 @@ nav>ul>li>a:active {
 
 }
 
-.row:after {
+.row::after {
   content: "";
   clear: both;
   display: table;
 }
 
+#work h2{
+  text-align: center;
+}
+
+}
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
 }
 
-#work .row:after {
+#work .row::after {
   content: "";
   clear: both;
   display: table;
 }
 }
-#footer {
-  text-align: center;
+
+.process {
+ height: 100%;
+  width: 100%
 }
 
+@keyframes color-change {
+  0% {fill:#72B7FF;}
+50% {fill: #358DE8;}
+  100% {fill:#0D66C2;}
+}
+
+.pathway {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction:alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes icon-move {
+  from{transform: translate(0,0px);}
+  to {transform: translate(0px, 10px);}
+}
+
+.icon {
+  animation: 3s icon-move infinite alternate linear;
+}
 /* id selectors for about */
+
+#about-page h3 {
+  margin-left: 0;
+}
 
 #about-head #about-story h2 {
   text-align: center;
 }
 
+#skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px 0px 0px 0px
+
+}
+
 #about-skills h2 {
   text-align: center;
+  display: block;
 }
 
 #about-tools
@@ -256,7 +315,13 @@ nav>ul>li>a:active {
 
 /* id selectors for linkedin */
 
-#linked-intro #linked-process h2 {
+
+
+
+
+
+
+#linked-process h2 {
   text-align: center;
 }
 
@@ -283,29 +348,96 @@ nav>ul>li>a:active {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center;
   }
 
+header img {
+  max-width: 100px;
+}
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
   }
-  .col-md-6 {
-  width: 50%;
+
+.col-md-6 {
+  width: auto;
 }
 
+.button {
+  width: 200px;
+  text-align: center;
+}
 
+.svg{
+  width: 100%
+  max-width: 100%;
+  height: auto;
+}
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+
+
+main {
+  padding top: 20px;
+}
+.row {
+  padding: 10px 0;
+}
+
+.col-lg-7 {
+width: 60%;
+}
+
+.col-lg-5 {
+width: 40%;
+}
+
+.col-lg-5 h3{
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.col-lg-5 p{
+  font-size: 16px;
+}
+
+.svg{
+  width: 100%
+  max-width: 100%;
+  height: auto;
+}
+
+}
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+
+  header img {
+    max-width: 150px;
+  }
+  .col-xl-4 p {
+    font-size:20px;
+  }
+
+  .col-xl-4 h3 {
+    font-size: 28px;
+  }
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
