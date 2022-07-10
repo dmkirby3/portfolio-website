@@ -228,6 +228,15 @@ nav>ul>li>a:active {
   clear: both;
   display: table;
 }
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+
+.col-md-6 {
+  width: auto;
+}
+
 
 #work h2{
   text-align: center;
@@ -244,6 +253,15 @@ nav>ul>li>a:active {
   clear: both;
   display: table;
 }
+}
+
+
+
+.animation-img img {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
 }
 
 .process {
@@ -301,11 +319,6 @@ justify-content: center;
   text-align: center;
 }
 
-#skills {
-
-
-}
-
 #about-skills h2 {
   text-align: center;
   display: block;
@@ -313,49 +326,30 @@ justify-content: center;
 
 #about-tools
 
-/* id selectors for presence direction */
+/* id selectors for project pages */
 
-#pres-intro {
+#project-page .intro {
   text-align: center;
 }
 
-#pres-process h2 {
+#project-page h1, h2{
   text-align: center;
 }
-
-#pres-conclusion h2 {
-  text-align: center;
+#project-page h3 {
+  padding: 0 20px;
+}
+#project-page img {
+  padding: 0 20px;
 }
 
-/* id selectors for linkedin */
-
-
-
-
-
-
-
-#linked-process h2 {
-  text-align: center;
+#project-page p {
+  padding: 0 20px;
 }
 
-#linked-conclusion h2 {
-  text-align: center;
-}
-
-/* id selectors for becoming counseling */
-
-#bcmg-intro #bcmg-process h2 {
-  text-align: center;
-}
-
-#bcmg-conclusion h2 {
-  text-align: center;
-}
-
-[class*="col-"] {
-  float: left;
-  padding: 10px;
+#project-page picture {
+display: flex;
+justify-content: center;
+padding: 20px 20px;
 }
 
 /* ==============================
@@ -387,20 +381,6 @@ header img {
   text-align: center;
 }
 
-.svg{
-  width: 100%
-  max-width: 100%;
-  height: auto;
-}
-
-.col-lg-7 {
-width: 60%;
-}
-
-.col-lg-5 {
-width: 40%;
-}
-}
 
 /* ==============================
 Large devices (1024px or larger)
@@ -438,6 +418,23 @@ width: 40%;
   height: auto;
 }
 
+#project-page picture {
+display: flex;
+justify-content: center;
+padding: 30px 30px;
+}
+
+#project-page h3{
+  padding: 0 30px;
+}
+
+#project-page p{
+  padding: 0 30px;
+}
+
+
+
+}
 }
 
 /* ==============================
