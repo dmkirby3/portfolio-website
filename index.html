@@ -19,17 +19,24 @@
   <header>
 
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="img/logo.png" alt="logo">
-      </a>
-      <!-- For the navigation -->
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="logo">
+        </a>
+        <!-- For the navigation -->
+        <nav>
+          <ul class="navigation">
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+                  <path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+                </svg>
+              </a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -67,7 +74,7 @@
           </picture>
         </div><!-- end first column that holds an image  -->
 
-      <div class="col-md-6 col-lg-5 col-xl-4">
+        <div class="col-md-6 col-lg-5 col-xl-4">
           <!-- open second column (used for text)  -->
           <h3>LinkedIn Referral Feature, Semi-finalist Hackathon Winning Project</h3>
           <p>I utilized existing market research to determine viability of a referral feature on LinkedIn, and educated our developers on the purpose of a persona in understanding and empathizing with our the user. The assets I created also helped
@@ -81,7 +88,7 @@
 
       <div class="row">
         <!-- open row that holds (2) columns for project -->
-      <div class="col-md-6 col-lg-7 col-xl-4">
+        <div class="col-md-6 col-lg-7 col-xl-4">
           <!-- open first column that holds an image  -->
           <picture>
             <source srcset="img/home/pd@1.png" media="(max-width:767px)">
@@ -104,7 +111,7 @@
 
       <div class="row">
         <!-- open row that holds (2) columns for project -->
-      <div class="col-md-6 col-lg-7 col-xl-4">
+        <div class="col-md-6 col-lg-7 col-xl-4">
           <!-- open first column that holds an image  -->
           <picture>
             <source srcset="img/home/becoming@1.png" media="(max-width:767px)">
@@ -159,7 +166,7 @@
             <g />
             <g />
             <g />
-              <g />
+            <g />
           </svg>
         </a>
         <p>Copyright Diana Kirby 2022</p>
@@ -167,11 +174,8 @@
     </div>
 
   </footer>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
-<script src="js/scripts.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

@@ -139,8 +139,8 @@ transition: 0.2s opacity;
 header {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(255, 255, 255, 1);
-  text-align: center;
   display: inline-block;
+  text-align: center;
   width: 100%;
   position: relative;
   box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
@@ -149,24 +149,28 @@ header {
 
   header img {
   max-width: 250px;
+
 }
 
 
 /* navigation menu styling */
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
 nav {
   display: inline-block;
+  float: right;
   width: 100%;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
+  float: right;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 15px;
@@ -186,6 +190,7 @@ nav>ul>li>a:hover {
 nav>ul>li>a:active {
   color: #AA8BA1;
 }
+
 
 
 #hero {
@@ -357,19 +362,38 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  align-items: center;
+    position: relative;
   }
 
 header img {
-  max-width: 100px;
+  max-width: 150px;
+
 }
   nav {
     width: auto;
     float: right;
     margin-top: 4px;
+  }
+
+  .navtoggle {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-between;
+  }
+
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+    margin: 65px 0 0 0;
   }
 
 .col-md-6 {
@@ -391,6 +415,11 @@ Large devices (1024px or larger)
 main {
   padding top: 20px;
 }
+
+
+
+
+
 .row {
   padding: 10px 0;
 }
@@ -443,7 +472,7 @@ X-large devices (1440px or larger)
 @media only screen and (min-width: 1440px) {
 
   header img {
-    max-width: 150px;
+    max-width: 200px;
   }
   .col-xl-4 p {
     font-size:20px;
