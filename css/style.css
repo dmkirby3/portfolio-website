@@ -158,10 +158,6 @@ header {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
-  position: relative;
-}
-
 .navtoggle li .icon {
   position: absolute;
   right: 0;
@@ -170,7 +166,23 @@ header {
   padding-right: 0;
   margin-top: 65px;
 }
+.navtoggle.responsive nav{
+  padding: 24px 0 0;
+}
 
+.navtoggle.responsive li{
+  display:block;
+  padding:10px 0;
+  border-top: 1px solid rgba(0,0,0,1);
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
 
 nav>ul {
   list-style-type: none;
