@@ -34,7 +34,10 @@ main {
 }
 
 /* typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -79,13 +82,13 @@ a {
 
 a:visited {
   /* visited link */
-  color: #aa8ba1;
+  color: #bea6b7;
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #aa8ba1;
+  color: #bea6b7;
   text-decoration: 700px;
 
   /* bold when hovering over a link */
@@ -110,7 +113,7 @@ a:active {
 }
 
 .button:hover {
-  background-color: #aa8ba1;
+  background-color: #bea6b7;
   color: rgba(82, 55, 93, 1);
   font-weight: 700;
   opacity: 0.8;
@@ -176,7 +179,8 @@ header img {
   border-top: 1px solid rgba(0, 0, 0, 1);
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -203,11 +207,11 @@ nav > ul > li > a:visited {
 }
 
 nav > ul > li > a:hover {
-  color: #aa8ba1;
+  color: #bea6b7;
 }
 
 nav > ul > li > a:active {
-  color: #aa8ba1;
+  color: #bea6b7;
 }
 
 #hero {
@@ -360,7 +364,8 @@ nav > ul > li > a:active {
   text-align: center;
 }
 
-#project-page h1, h2 {
+#project-page h1,
+h2 {
   text-align: center;
 }
 
