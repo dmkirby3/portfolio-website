@@ -15,15 +15,18 @@ body {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
+
   /* Sets the font size to 16px */
   font-weight: 300;
+
   /* Sets the font weight to 300 */
   line-height: 1.6;
+
   /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #000;
 }
 
 main {
@@ -58,7 +61,7 @@ h4 {
 
 p {
   font-size: 1.25em;
-  font-weight: 200
+  font-weight: 200;
 }
 
 /* images */
@@ -70,20 +73,22 @@ img {
 a {
   color: rgba(0, 0, 0, 1);
   text-decoration: underline;
-  /*underlining*/
+
+  /* underlining */
 }
 
 a:visited {
   /* visited link */
-  color: #AA8BA1;
+  color: #aa8ba1;
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #AA8BA1;
+  color: #aa8ba1;
   text-decoration: 700px;
-  /*bold when hovering over a link */
+
+  /* bold when hovering over a link */
 }
 
 a:active {
@@ -97,15 +102,15 @@ a:active {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(255, 255, 255, 1);
   font-weight: 400;
-text-decoration: none;
+  text-decoration: none;
   padding: 16px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 1);
-transition: 0.2s opacity;
+  transition: 0.2s opacity;
 }
 
 .button:hover {
-  background-color: #AA8BA1;
+  background-color: #aa8ba1;
   color: rgba(82, 55, 93, 1);
   font-weight: 700;
   opacity: 0.8;
@@ -118,9 +123,9 @@ transition: 0.2s opacity;
 
 .button.contact {
   background-color: transparent;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   text-transform: uppercase;
-  border: 2px solid rgba(255,255,255,1);
+  border: 2px solid rgba(255, 255, 255, 1);
 }
 
 .button.contact:hover {
@@ -134,26 +139,20 @@ transition: 0.2s opacity;
 }
 
 /* header styling */
-
-
 header {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(255, 255, 255, 1);
   display: inline-block;
   width: 100%;
   position: relative;
-  box-shadow: 0px 10px 5px 0px rgba(50, 50, 50, 0.75);
-  width: 100%;
+  box-shadow: 0 10px 5px 0 rgba(50, 50, 50, 0.75);
 }
 
-  header img {
+header img {
   max-width: 150px;
-
 }
-
 
 /* navigation menu styling */
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -161,19 +160,20 @@ header {
 .navtoggle li .icon {
   position: absolute;
   right: 0;
-  top:2px;
+  top: 2px;
   font-size: 20px;
   padding-right: 0;
   margin-top: 65px;
 }
-.navtoggle.responsive nav{
+
+.navtoggle.responsive nav {
   padding: 24px 0 0;
 }
 
-.navtoggle.responsive li{
-  display:block;
-  padding:10px 0;
-  border-top: 1px solid rgba(0,0,0,1);
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 1);
 }
 
 .navtoggle, .navtoggle.responsive {
@@ -184,40 +184,37 @@ header {
   padding: 0 0 10px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   float: right;
-  margin:0;
+  margin: 0;
 }
 
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
   color: rgba(255, 255, 255, 1);
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   color: rgba(255, 255, 255, 1);
 }
 
-nav>ul>li>a:hover {
-  color: #AA8BA1;
+nav > ul > li > a:hover {
+  color: #aa8ba1;
 }
 
-nav>ul>li>a:active {
-  color: #AA8BA1;
+nav > ul > li > a:active {
+  color: #aa8ba1;
 }
-
-
 
 #hero {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(235, 234, 235, 1);
   padding: 20px 15px;
-  display:inline-block;
+  display: inline-block;
   text-align: center;
   width: 100%;
 }
@@ -231,13 +228,15 @@ nav>ul>li>a:active {
   background-color: rgba(82, 55, 93, 1);
   color: rgba(235, 234, 235, 1);
 }
+
 #contact .container {
-  padding: 10px 10px;
+  padding: 10px;
 }
 
 .socials {
-  padding: 10px 0 10px 0;
+  padding: 10px 0;
 }
+
 /* layout styling */
 .container {
   padding: 0 15px;
@@ -245,7 +244,6 @@ nav>ul>li>a:active {
 
 .row {
   margin: 25px 0;
-
 }
 
 .row::after {
@@ -253,6 +251,7 @@ nav>ul>li>a:active {
   clear: both;
   display: table;
 }
+
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -262,12 +261,10 @@ nav>ul>li>a:active {
   width: auto;
 }
 
-
-#work h2{
+#work h2 {
   text-align: center;
 }
 
-}
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
@@ -278,46 +275,55 @@ nav>ul>li>a:active {
   clear: both;
   display: table;
 }
-}
-
-
 
 .animation-img img {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-
 }
 
 .process {
- height: 100%;
-  width: 100%
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes color-change {
-  0% {fill:#72B7FF;}
-50% {fill: #358DE8;}
-  100% {fill:#0D66C2;}
+  0% {
+    fill: #72b7ff;
+  }
+
+  50% {
+    fill: #358de8;
+  }
+
+  100% {
+    fill: #0d66c2;
+  }
 }
 
 .pathway {
   animation-duration: 4s;
   animation-name: color-change;
   animation-iteration-count: infinite;
-  animation-direction:alternate;
+  animation-direction: alternate;
   animation-timing-function: linear;
 }
 
 @keyframes icon-move {
-  from{transform: translate(0,0px);}
-  to {transform: translate(0px, 10px);}
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, 10px);
+  }
 }
 
 .icona {
   animation: 3s icon-move infinite alternate linear;
 }
-/* id selectors for about */
 
+/* id selectors for about */
 #about-page h3 {
   margin-left: 0;
 }
@@ -336,10 +342,10 @@ nav>ul>li>a:active {
 
 #resume {
   margin: 30px 0;
-display:flex;
-justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
+
 #about-head #about-story h2 {
   text-align: center;
 }
@@ -349,21 +355,18 @@ justify-content: center;
   display: block;
 }
 
-#about-tools
-
 /* id selectors for project pages */
-
 #project-page .intro {
   text-align: center;
 }
 
-#project-page h1, h2{
+#project-page h1, h2 {
   text-align: center;
 }
+
 #project-page h3 {
   padding: 0 20px;
 }
-
 
 #project-page p {
   padding: 0 40px;
@@ -371,15 +374,10 @@ justify-content: center;
 }
 
 #project-page picture {
-display: flex;
-justify-content: center;
-padding: 60px 60px;
-margin: 60px 60px;
-
-}
-
-iframe{
-  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px 1 0;
 }
 
 /* ==============================
@@ -390,10 +388,10 @@ Medium devices (640px and larger)
     position: relative;
   }
 
-header img {
-  max-width: 150px;
+  header img {
+    max-width: 150px;
+  }
 
-}
   nav {
     width: auto;
     float: right;
@@ -407,7 +405,6 @@ header img {
     justify-content: space-between;
   }
 
-
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -416,101 +413,95 @@ header img {
     display: none;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
-    margin: 65px 0 0 0;
+    margin: 65px 0 0;
   }
 
-.col-md-6 {
-  width: auto;
-}
+  .col-md-6 {
+    width: auto;
+  }
 
-.button {
-  width: 200px;
-  text-align: center;
+  .button {
+    width: 200px;
+    text-align: center;
+  }
 }
-
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  main {
+    padding: 20px 0 0;
+  }
 
+  .row {
+    padding: 10px 0;
+  }
 
-main {
-  padding top: 20px;
-}
+  .col-lg-7 {
+    width: 60%;
+  }
 
+  .col-lg-5 {
+    width: 40%;
+  }
 
+  .col-lg-5 h3 {
+    font-size: 22px;
+    margin: 10px 0;
+  }
 
+  .col-lg-5 p {
+    font-size: 16px;
+  }
 
+  .svg.animated {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 
-.row {
-  padding: 10px 0;
-}
+  #project-page h3 {
+    padding: 0 40px;
+  }
 
-.col-lg-7 {
-width: 60%;
-}
+  #project-page p {
+    padding: 0 30px;
+  }
 
-.col-lg-5 {
-width: 40%;
-}
-
-.col-lg-5 h3{
-  font-size: 22px;
-  margin: 10px 0;
-}
-
-.col-lg-5 p{
-  font-size: 16px;
-}
-
-.svg.animated{
-  width: 100%
-  max-width: 100%;
-  height: auto;
-}
-
-#project-page picture {
-display: flex;
-justify-content: center;
-padding: 30px 30px;
-}
-
-#project-page h3{
-  padding: 0 30px;
-}
-
-#project-page p{
-  padding: 0 30px;
-}
-
-
-
-}
+  #project-page picture {
+    justify-content: center;
+    width: auto;
+    height: auto;
+  }
 }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-
   header img {
     max-width: 200px;
   }
+
   .col-xl-4 p {
-    font-size:20px;
+    font-size: 20px;
   }
 
   .col-xl-4 h3 {
     font-size: 28px;
   }
+
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
 
-
+  #project-page p {
+    padding: 0 30px;
+    margin: 0 60px;
+  }
 }
