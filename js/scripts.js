@@ -8,3 +8,8 @@ if (x.className === 'navToggle') {
     x.className = 'navToggle';
   }
 }
+
+$("#click_advance").click(function(){
+  $("#display_advance").toggle("1000");
+  $("i",this).toggleClass("fas fa-bars fas fa-x");
+});
