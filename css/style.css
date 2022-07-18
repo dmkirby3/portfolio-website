@@ -477,6 +477,7 @@ Large devices (1024px or larger)
 
   #project-page h3 {
     padding: 0 40px;
+    text-decoration: underline;
   }
 
   #project-page p {
@@ -494,7 +495,7 @@ Large devices (1024px or larger)
     flex-direction: row;
     flex-flow: wrap;
     border-bottom: 2px solid #000;
-    
+
   }
 
   #project-page .col-md-6 {
