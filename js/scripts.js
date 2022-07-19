@@ -7,7 +7,7 @@ function menuToggle (x) {
   }
 }
 
-$('#click_advance').click(function() {
+$('#click_advance').click (function() {
   $('#display_advance').toggle('1000');
   $("i", this).toggleClass("fas fa-bars fas fa-x");
 });
