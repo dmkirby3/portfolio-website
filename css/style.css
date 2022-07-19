@@ -44,7 +44,6 @@ h1 {
   text-align: center;
 }
 
-
 h3 {
   font-size: 1.75em;
   font-weight: 400;
@@ -544,7 +543,7 @@ X-large devices (1440px or larger)
     font-size: 28px;
   }
 
-p {
+  p {
     text-size: 18px;
   }
 }
