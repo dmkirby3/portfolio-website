@@ -396,21 +396,6 @@ h2 {
   max-width: 650px;
 }
 
-.svg-container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.svg-content {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 /* ==============================
 Medium devices (640px and larger)

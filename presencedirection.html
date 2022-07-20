@@ -18,21 +18,29 @@
 <body id="project-page">
   <!-- For the header -->
   <header>
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="img/logo.png" alt="logo">
-      </a>
-      <!-- For the navigation -->
-      <nav>
-        <ul class="navigation">
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <!-- For the navigation -->
+  <div class="container">
+          <div class="navtoggle" id="myNavtoggle">
+              <a href="index.html">
+               <img src="img/logo.png" class="logo" alt="Logo" >
+              </a>
+              <nav>
+                <ul class="navigation">
+                  <li><a href="index.html">Work</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="#contact" onclick="menuToggle(this)">Contact</a></li>
+                  <li>
+                      <p id="click_advance">
+                          <a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+                          <i class="fas fa-bars"></i>
+                          </a>
+                      </p>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+  </div>
+</header>
   <main>
 
     <div id="pres-intro" class="container">
