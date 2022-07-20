@@ -75,12 +75,6 @@ a {
   /* underlining */
 }
 
-a:visited {
-  /* visited link */
-  color: #bea6b7;
-  text-decoration: underline;
-}
-
 a:hover,
 a:focus {
   color: #bea6b7;
@@ -126,8 +120,8 @@ a:active {
 }
 
 .button.contact:hover {
-  background-color: rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 1);
+  background-color: #bea6b7;
+  color: rgba(0,0,0,1);
 }
 
 .button.contact:active {
@@ -196,9 +190,6 @@ nav>ul>li>a {
   color: rgba(255, 255, 255, 1);
 }
 
-nav>ul>li>a:visited {
-  color: rgba(255, 255, 255, 1);
-}
 
 nav>ul>li>a:hover {
   color: #bea6b7;
